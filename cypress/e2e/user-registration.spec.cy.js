@@ -86,19 +86,6 @@ describe('user_registration test', () => {
 
     })
 
-    it("sign up with facebook",()=>{
-      cy.get('.form__section--links > .socials > :nth-child(1) > .socials__link > .icon-facebook').click();
-
-    })
-
-    it("sign up with google",()=>{
-        
-    })
-
-    it("sign up with telegram",()=>{
-        
-    })
-
     it("fields empty",()=>{
       cy.get('[data-test="control-submit"]').click()
       cy.get('[data-test="error-email"]').should('be.visible')
